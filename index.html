@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AVI.EXE — Personal portfolio of Avi Garg, a first-year Computer Science & AI student exploring software development, artificial intelligence, and foundational engineering.">
+  <meta name="theme-color" content="#08090d">
+  <title>AVI.EXE — A WORLD IN PROGRESS</title>
+
+  <!-- Typography: Modern technical display, readable body, and crisp monospace with system fallbacks -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Ambient Background Coordinates & Grid -->
+  <div class="ambient-grid" aria-hidden="true"></div>
+  <div class="ambient-glow" aria-hidden="true"></div>
+
+  <!-- Top Navigation Header -->
+  <header class="site-header">
+    <div class="header-inner container">
+      <a href="#hero" class="brand-link" aria-label="AVI.EXE Home">
+        <span class="brand-bracket">[</span>
+        <span class="brand-text">AVI.EXE</span>
+        <span class="brand-bracket">]</span>
+        <span class="brand-status" aria-hidden="true">
+          <span class="status-dot"></span>
+          <span class="status-label">SYS.ONLINE</span>
+        </span>
+      </a>
+
+      <nav class="site-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link"><span class="nav-index">01.</span>About</a></li>
+          <li><a href="#focus" class="nav-link"><span class="nav-index">02.</span>Focus</a></li>
+          <li><a href="#skills" class="nav-link"><span class="nav-index">03.</span>Skills</a></li>
+          <li><a href="#direction" class="nav-link"><span class="nav-index">04.</span>Direction</a></li>
+          <li><a href="#contact" class="nav-link"><span class="nav-index">05.</span>Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-action">
+        <a href="https://github.com/garg_avi" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-ghost">
+          <span>GitHub</span>
+          <span class="icon-arrow" aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Landmark -->
+  <main id="main-content">
+
+    <!-- ================================================================= -->
+    <!-- SECTION: HERO                                                     -->
+    <!-- ================================================================= -->
+    <section id="hero" class="section hero-section" aria-labelledby="hero-heading">
+      <div class="container hero-container">
+        
+        <div class="hero-content">
+          <!-- Small Eyebrow -->
+          <div class="eyebrow-wrapper">
+            <span class="status-badge">
+              <span class="status-pulse" aria-hidden="true"></span>
+              FIRST-YEAR B.TECH · CSE &amp; AI
+            </span>
+            <span class="meta-tag">BUILD // 2024.1</span>
+          </div>
+
+          <!-- Developer Name Introduction -->
+          <p class="hero-intro-label">
+            <span class="label-decor" aria-hidden="true">//</span>
+            <span>Hello, I am</span>
+            <strong class="hero-name">Avi Garg</strong>
+          </p>
+
+          <!-- Main Headline -->
+          <h1 id="hero-heading" class="hero-title">
+            <span class="title-line">CURIOUS BY NATURE.</span>
+            <span class="title-line title-highlight">BUILDING BY CHOICE.</span>
+          </h1>
+
+          <!-- Supporting Text -->
+          <p class="hero-description">
+            I'm a first-year Computer Science and AI student exploring software development, artificial intelligence, and the process of turning ideas into useful products.
+          </p>
+
+          <!-- Call to Action Links -->
+          <div class="hero-actions">
+            <a href="#focus" class="btn btn-primary">
+              <span>Explore My Focus</span>
+              <span class="btn-icon" aria-hidden="true">↓</span>
+            </a>
+            <a href="https://github.com/garg_avi" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              <span>GitHub</span>
+              <span class="btn-icon" aria-hidden="true">↗</span>
+            </a>
+          </div>
+
+          <!-- Hero Telemetry Micro-Bar -->
+          <div class="hero-telemetry" aria-label="System telemetry">
+            <div class="telemetry-item">
+              <span class="telemetry-label">STATUS</span>
+              <span class="telemetry-value">EXPLORING &amp; LEARNING</span>
+            </div>
+            <div class="telemetry-divider" aria-hidden="true">/</div>
+            <div class="telemetry-item">
+              <span class="telemetry-label">DISCIPLINE</span>
+              <span class="telemetry-value">CSE &amp; AI FOUNDATIONS</span>
+            </div>
+            <div class="telemetry-divider" aria-hidden="true">/</div>
+            <div class="telemetry-item">
+              <span class="telemetry-label">RUNTIME</span>
+              <span class="telemetry-value">PURE HTML + CSS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CSS-Only Technical Visual Element (Orbital Coordinate Matrix) -->
+        <div class="hero-visual" aria-hidden="true">
+          <div class="orbital-rig">
+            <!-- Background Coordinate Grid -->
+            <div class="rig-grid"></div>
+            
+            <!-- Outer Dial Ring with Coordinates -->
+            <div class="orbital-ring ring-outer">
+              <span class="coord coord-n">000°</span>
+              <span class="coord coord-e">090°</span>
+              <span class="coord coord-s">180°</span>
+              <span class="coord coord-w">270°</span>
+            </div>
+
+            <!-- Middle Orbit Track with Pulse Satellite -->
+            <div class="orbital-ring ring-mid">
+              <div class="satellite-node"></div>
+            </div>
+
+            <!-- Inner Orbit Track (Reverse Spin) -->
+            <div class="orbital-ring ring-inner">
+              <div class="ring-ticks"></div>
+            </div>
+
+            <!-- Radar Sweep Arm -->
+            <div class="radar-sweep"></div>
+
+            <!-- Center Technical Core Monogram -->
+            <div class="orbital-core">
+              <div class="core-reticle"></div>
+              <div class="core-label">AVI.EXE</div>
+              <div class="core-sub">NODE 01</div>
+              <div class="core-coords">SYS.CSE_AI</div>
+            </div>
+
+            <!-- Corner Frame Reticles -->
+            <div class="corner-bracket corner-tl"></div>
+            <div class="corner-bracket corner-tr"></div>
+            <div class="corner-bracket corner-bl"></div>
+            <div class="corner-bracket corner-br"></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- SECTION: ABOUT ME                                                 -->
+    <!-- ================================================================= -->
+    <section id="about" class="section about-section" aria-labelledby="about-heading">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-kicker">
+            <span class="kicker-num">01</span>
+            <span class="kicker-sep">//</span>
+            <span class="kicker-text">FOUNDATION &amp; PERSPECTIVE</span>
+          </div>
+          <h2 id="about-heading" class="section-title">A WORK IN PROGRESS.</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-main-text">
+            <p class="lead-text">
+              I am currently laying down the foundational building blocks of computer science and software development.
+            </p>
+            <p>
+              As a first-year student pursuing Computer Science and Artificial Intelligence, I spend my days building a solid technical foundation: breaking down programming logic, working through algorithmic problems, and understanding how computing systems function from the ground up.
+            </p>
+            <p>
+              Rather than viewing code solely as classroom theory, I am fascinated by the craft of building. I want to understand how software operates under the hood, how intelligent systems are architected, and how clean, reliable code can be applied to solve real-world problems.
+            </p>
+            <p>
+              I don't claim to be an expert or a seasoned veteran. I am a dedicated student at the beginning of an intentional, long-term journey—committed to consistent study, deliberate practice, and continuous curiosity.
+            </p>
+          </div>
+
+          <!-- Structured Fact Sheet / Workspace Specs -->
+          <aside class="about-sidebar" aria-label="Student Background Details">
+            <div class="spec-card">
+              <div class="spec-header">
+                <span class="spec-icon" aria-hidden="true">■</span>
+                <span class="spec-title">STUDENT DOSSIER</span>
+                <span class="spec-id">DOC.AG-01</span>
+              </div>
+              
+              <dl class="spec-list">
+                <div class="spec-row">
+                  <dt class="spec-term">ACADEMIC PATH</dt>
+                  <dd class="spec-desc">B.Tech in Computer Science &amp; Engineering (AI)</dd>
+                </div>
+                <div class="spec-row">
+                  <dt class="spec-term">ACADEMIC STAGE</dt>
+                  <dd class="spec-desc">First-Year Undergraduate</dd>
+                </div>
+                <div class="spec-row">
+                  <dt class="spec-term">PRIMARY FOCUS</dt>
+                  <dd class="spec-desc">Foundational Programming &amp; Algorithmic Logic</dd>
+                </div>
+                <div class="spec-row">
+                  <dt class="spec-term">DEVELOPMENT CREED</dt>
+                  <dd class="spec-desc">Code carefully. Understand deeply. Build iteratively.</dd>
+                </div>
+                <div class="spec-row">
+                  <dt class="spec-term">ENVIRONMENT</dt>
+                  <dd class="spec-desc">Python, Terminal, Git, Semantic Web</dd>
+                </div>
+              </dl>
+
+              <div class="spec-footer">
+                <span class="dot-online" aria-hidden="true"></span>
+                <span>STATUS: ACTIVE STUDY &amp; REPOSITORY COMMITS</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- SECTION: CURRENT FOCUS                                            -->
+    <!-- ================================================================= -->
+    <section id="focus" class="section focus-section" aria-labelledby="focus-heading">
+      <div class="container">
+
+        <div class="section-header">
+          <div class="section-kicker">
+            <span class="kicker-num">02</span>
+            <span class="kicker-sep">//</span>
+            <span class="kicker-text">ACTIVE EXPLORATION</span>
+          </div>
+          <h2 id="focus-heading" class="section-title">CURRENT FOCUS.</h2>
+          <p class="section-subtitle">
+            A structured index of the core areas I am actively studying, practicing, and compounding each day.
+          </p>
+        </div>
+
+        <!-- Structured Typographic Index Layout -->
+        <div class="focus-index" role="list">
+          
+          <!-- Item 01 -->
+          <article class="focus-item" role="listitem">
+            <div class="focus-meta">
+              <span class="focus-num">01/</span>
+              <span class="focus-domain">LANGUAGE &amp; SYNTAX</span>
+            </div>
+            <div class="focus-main">
+              <h3 class="focus-name">Python Fundamentals</h3>
+              <p class="focus-detail">
+                Studying core data types, conditional branching, modular functions, object-oriented concepts, and clean scripting habits.
+              </p>
+            </div>
+            <div class="focus-status">
+              <span class="status-pill">CORE STUDY</span>
+            </div>
+          </article>
+
+          <!-- Item 02 -->
+          <article class="focus-item" role="listitem">
+            <div class="focus-meta">
+              <span class="focus-num">02/</span>
+              <span class="focus-domain">STRUCTURE &amp; STYLES</span>
+            </div>
+            <div class="focus-main">
+              <h3 class="focus-name">HTML &amp; CSS</h3>
+              <p class="focus-detail">
+                Writing semantic, accessible HTML5 markup and building fluid, responsive layouts with modern CSS Grid, Flexbox, and custom properties.
+              </p>
+            </div>
+            <div class="focus-status">
+              <span class="status-pill">ACTIVE PRACTICE</span>
+            </div>
+          </article>
+
+          <!-- Item 03 -->
+          <article class="focus-item" role="listitem">
+            <div class="focus-meta">
+              <span class="focus-num">03/</span>
+              <span class="focus-domain">VERSION CONTROL</span>
+            </div>
+            <div class="focus-main">
+              <h3 class="focus-name">Git &amp; GitHub</h3>
+              <p class="focus-detail">
+                Practicing disciplined command-line version control: atomic commits, branch workflows, and keeping code repositories structured and transparent.
+              </p>
+            </div>
+            <div class="focus-status">
+              <span class="status-pill">WORKFLOW</span>
+            </div>
+          </article>
+
+          <!-- Item 04 -->
+          <article class="focus-item" role="listitem">
+            <div class="focus-meta">
+              <span class="focus-num">04/</span>
+              <span class="focus-domain">LOGICAL THINKING</span>
+            </div>
+            <div class="focus-main">
+              <h3 class="focus-name">Problem-Solving</h3>
+              <p class="focus-detail">
+                Deconstructing complex problem statements into discrete logical steps, tracing edge cases, and cultivating algorithmic rigor.
+              </p>
+            </div>
+            <div class="focus-status">
+              <span class="status-pill">DAILY DRILLS</span>
+            </div>
+          </article>
+
+          <!-- Item 05 -->
+          <article class="focus-item" role="listitem">
+            <div class="focus-meta">
+              <span class="focus-num">05/</span>
+              <span class="focus-domain">INTELLIGENT SYSTEMS</span>
+            </div>
+            <div class="focus-main">
+              <h3 class="focus-name">Artificial Intelligence</h3>
+              <p class="focus-detail">
+                Exploring foundational machine learning principles, agentic interaction patterns, and how intelligent automation can augment human problem-solving.
+              </p>
+            </div>
+            <div class="focus-status">
+              <span class="status-pill">EXPLORATION</span>
+            </div>
+          </article>
+
+          <!-- Item 06 -->
+          <article class="focus-item" role="listitem">
+            <div class="focus-meta">
+              <span class="focus-num">06/</span>
+              <span class="focus-domain">INTERFACE &amp; PLATFORM</span>
+            </div>
+            <div class="focus-main">
+              <h3 class="focus-name">Web Development</h3>
+              <p class="focus-detail">
+                Understanding browser rendering lifecycles, user experience ergonomics, interface hierarchy, and lightweight delivery without unnecessary bloat.
+              </p>
+            </div>
+            <div class="focus-status">
+              <span class="status-pill">EXPERIMENTATION</span>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- SECTION: PROJECTS & HACKATHON CONCEPTS                           -->
+    <!-- ================================================================= -->
+    <section id="projects" class="section projects-section" aria-labelledby="projects-heading">
+      <div class="container">
+
+        <div class="section-header">
+          <div class="section-kicker">
+            <span class="kicker-num">03</span>
+            <span class="kicker-sep">//</span>
+            <span class="kicker-text">CONCEPTUAL LAB</span>
+          </div>
+          <h2 id="projects-heading" class="section-title">PROJECTS &amp; HACKATHON CONCEPTS.</h2>
+          <p class="section-subtitle">
+            Early architectural explorations and problem-solving concepts. These represent conceptual ideations and design frameworks rather than finished commercial products.
+          </p>
+        </div>
+
+        <div class="projects-stack">
+          
+          <!-- PROJECT 01: FoodLoop AI -->
+          <article class="project-card project-foodloop" aria-labelledby="project-01-title">
+            <div class="project-header">
+              <div class="project-taxonomy">
+                <span class="project-index">PROJECT 01</span>
+                <span class="taxonomy-divider" aria-hidden="true">//</span>
+                <span class="project-category">AGENTIC AI × SDG</span>
+              </div>
+              <div class="project-state-badge">
+                <span class="badge-indicator" aria-hidden="true"></span>
+                <span>EXPLORATION &amp; ARCHITECTURAL CONCEPT</span>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-content">
+                <h3 id="project-01-title" class="project-name">FoodLoop AI</h3>
+                <p class="project-tagline">Autonomous Redistribution Framework for Food Waste Mitigation</p>
+                
+                <p class="project-description">
+                  An AI-driven food waste reduction and redistribution concept exploring how intelligent automation could help connect surplus food with people or organizations that need it.
+                </p>
+
+                <div class="project-notes">
+                  <div class="note-item">
+                    <span class="note-bullet" aria-hidden="true">▸</span>
+                    <p><strong>Core Concept:</strong> Investigate automated matching algorithms that factor in perishability time-windows, geographical proximity, and beneficiary capacity.</p>
+                  </div>
+                  <div class="note-item">
+                    <span class="note-bullet" aria-hidden="true">▸</span>
+                    <p><strong>Target Objective:</strong> Mitigate urban food waste while supporting sustainable consumption aligned with UN Sustainable Development Goals.</p>
+                  </div>
+                </div>
+
+                <div class="project-tags" aria-label="Conceptual Areas">
+                  <span class="tag">Surplus Routing</span>
+                  <span class="tag">Agentic Logic</span>
+                  <span class="tag">Logistics Heuristics</span>
+                  <span class="tag">SDG 12 &amp; 2</span>
+                </div>
+              </div>
+
+              <!-- CSS-Designed Visual Treatment: Data Flow Diagram -->
+              <div class="project-visual" aria-hidden="true">
+                <div class="diagram-shell">
+                  <div class="diagram-topbar">
+                    <span class="diagram-dot"></span>
+                    <span class="diagram-title">FLOW_SIMULATION // FOODLOOP_AI</span>
+                    <span class="diagram-status">SYS: SCHEMATIC</span>
+                  </div>
+
+                  <div class="flow-canvas">
+                    <!-- Stage 1 -->
+                    <div class="flow-step">
+                      <div class="step-badge">INPUT 01</div>
+                      <div class="step-box">
+                        <span class="step-title">Surplus Influx</span>
+                        <span class="step-sub">Perishability / Volume Data</span>
+                      </div>
+                    </div>
+
+                    <!-- Flow Connector -->
+                    <div class="flow-connector">
+                      <div class="connector-line"></div>
+                      <span class="connector-label">TRIAGE</span>
+                    </div>
+
+                    <!-- Stage 2 (Center AI Engine) -->
+                    <div class="flow-step step-highlight">
+                      <div class="step-badge badge-accent">AGENTIC ENGINE</div>
+                      <div class="step-box box-accent">
+                        <span class="step-title">Matching Matrix</span>
+                        <span class="step-sub">Proximity + Priority Scoring</span>
+                      </div>
+                    </div>
+
+                    <!-- Flow Connector -->
+                    <div class="flow-connector">
+                      <div class="connector-line"></div>
+                      <span class="connector-label">DISPATCH</span>
+                    </div>
+
+                    <!-- Stage 3 -->
+                    <div class="flow-step">
+                      <div class="step-badge">OUTPUT 02</div>
+                      <div class="step-box">
+                        <span class="step-title">Verified Routing</span>
+                        <span class="step-sub">Shelters &amp; Distribution Hubs</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="diagram-footer">
+                    <span>TIMING: REAL-TIME MATCHING</span>
+                    <span>STATUS: CONCEPTUAL SPEC</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 02: HACKOWEEN -->
+          <article class="project-card project-hackoween" aria-labelledby="project-02-title">
+            <div class="project-header">
+              <div class="project-taxonomy">
+                <span class="project-index">PROJECT 02</span>
+                <span class="taxonomy-divider" aria-hidden="true">//</span>
+                <span class="project-category">SMART CITIES CONCEPT</span>
+              </div>
+              <div class="project-state-badge">
+                <span class="badge-indicator" aria-hidden="true"></span>
+                <span>HACKATHON EXPLORATION &amp; CIVIC DESIGN</span>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-content">
+                <h3 id="project-02-title" class="project-name">HACKOWEEN</h3>
+                <p class="project-tagline">Civic Issue Organization, Triage &amp; Resolution Tracking</p>
+                
+                <p class="project-description">
+                  A civic-tech concept exploring how citizen reports could be organized, prioritized, and tracked toward verified resolution.
+                </p>
+
+                <div class="project-notes">
+                  <div class="note-item">
+                    <span class="note-bullet" aria-hidden="true">▸</span>
+                    <p><strong>Core Concept:</strong> Ideating a transparent reporting pipeline that deduplicates municipal reports, assigns severity scores, and creates an auditable resolution trail.</p>
+                  </div>
+                  <div class="note-item">
+                    <span class="note-bullet" aria-hidden="true">▸</span>
+                    <p><strong>Civic Objective:</strong> Bridge the communication gap between citizens and municipal responders through structured, verifiable digital workflows.</p>
+                  </div>
+                </div>
+
+                <div class="project-tags" aria-label="Conceptual Areas">
+                  <span class="tag">Civic Tech</span>
+                  <span class="tag">Issue Prioritization</span>
+                  <span class="tag">Public Infrastructure</span>
+                  <span class="tag">Verification Pipeline</span>
+                </div>
+              </div>
+
+              <!-- CSS-Designed Visual Treatment: Civic Triage Pipeline -->
+              <div class="project-visual" aria-hidden="true">
+                <div class="diagram-shell">
+                  <div class="diagram-topbar">
+                    <span class="diagram-dot"></span>
+                    <span class="diagram-title">CIVIC_TRIAGE // HACKOWEEN_SPEC</span>
+                    <span class="diagram-status">SYS: MODEL</span>
+                  </div>
+
+                  <div class="pipeline-canvas">
+                    <div class="pipeline-track">
+                      
+                      <div class="track-node">
+                        <span class="node-id">01</span>
+                        <div class="node-content">
+                          <span class="node-heading">Citizen Input</span>
+                          <span class="node-desc">Geo-tagged issue submission</span>
+                        </div>
+                        <span class="node-badge">INTAKE</span>
+                      </div>
+
+                      <div class="track-separator">
+                        <div class="sep-arrow"></div>
+                      </div>
+
+                      <div class="track-node node-active">
+                        <span class="node-id">02</span>
+                        <div class="node-content">
+                          <span class="node-heading">Deduplication</span>
+                          <span class="node-desc">Cluster redundant reports</span>
+                        </div>
+                        <span class="node-badge badge-accent">FILTER</span>
+                      </div>
+
+                      <div class="track-separator">
+                        <div class="sep-arrow"></div>
+                      </div>
+
+                      <div class="track-node">
+                        <span class="node-id">03</span>
+                        <div class="node-content">
+                          <span class="node-heading">Prioritization</span>
+                          <span class="node-desc">Severity &amp; safety weighting</span>
+                        </div>
+                        <span class="node-badge">QUEUE</span>
+                      </div>
+
+                      <div class="track-separator">
+                        <div class="sep-arrow"></div>
+                      </div>
+
+                      <div class="track-node">
+                        <span class="node-id">04</span>
+                        <div class="node-content">
+                          <span class="node-heading">Resolution Trail</span>
+                          <span class="node-desc">Publicly verifiable fix</span>
+                        </div>
+                        <span class="node-badge">VERIFIED</span>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="diagram-footer">
+                    <span>SECURITY: TAMPER-RESISTANT LOGS</span>
+                    <span>TARGET: MUNICIPAL UTILITIES</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- SECTION: SKILLS                                                   -->
+    <!-- ================================================================= -->
+    <section id="skills" class="section skills-section" aria-labelledby="skills-heading">
+      <div class="container">
+
+        <div class="section-header">
+          <div class="section-kicker">
+            <span class="kicker-num">04</span>
+            <span class="kicker-sep">//</span>
+            <span class="kicker-text">FOUNDATIONAL TOOLKIT</span>
+          </div>
+          <h2 id="skills-heading" class="section-title">SKILLS.</h2>
+          <p class="section-subtitle">
+            These represent my current foundational competencies and active areas of study. I focus on developing clean coding habits, core conceptual understanding, and dependable teamwork.
+          </p>
+        </div>
+
+        <!-- Skills Grid Layout -->
+        <div class="skills-grid">
+          
+          <!-- Skill 01 -->
+          <div class="skill-tile">
+            <div class="skill-tile-header">
+              <span class="skill-code">SKL-01</span>
+              <span class="skill-stage">FOUNDATION</span>
+            </div>
+            <h3 class="skill-title">Python Fundamentals</h3>
+            <p class="skill-desc">
+              Data structures, algorithm implementations, syntax clarity, functions, and modular problem-solving.
+            </p>
+            <div class="skill-indicator" aria-hidden="true">
+              <span class="indicator-bar"></span>
+            </div>
+          </div>
+
+          <!-- Skill 02 -->
+          <div class="skill-tile">
+            <div class="skill-tile-header">
+              <span class="skill-code">SKL-02</span>
+              <span class="skill-stage">FOUNDATION</span>
+            </div>
+            <h3 class="skill-title">HTML</h3>
+            <p class="skill-desc">
+              Semantic element hierarchy, document structure, accessibility standards (a11y), and clean markup practices.
+            </p>
+            <div class="skill-indicator" aria-hidden="true">
+              <span class="indicator-bar"></span>
+            </div>
+          </div>
+
+          <!-- Skill 03 -->
+          <div class="skill-tile">
+            <div class="skill-tile-header">
+              <span class="skill-code">SKL-03</span>
+              <span class="skill-stage">FOUNDATION</span>
+            </div>
+            <h3 class="skill-title">CSS</h3>
+            <p class="skill-desc">
+              Modern CSS Grid, Flexbox, responsive layouts, design tokens via custom properties, and fluid typography.
+            </p>
+            <div class="skill-indicator" aria-hidden="true">
+              <span class="indicator-bar"></span>
+            </div>
+          </div>
+
+          <!-- Skill 04 -->
+          <div class="skill-tile">
+            <div class="skill-tile-header">
+              <span class="skill-code">SKL-04</span>
+              <span class="skill-stage">FOUNDATION</span>
+            </div>
+            <h3 class="skill-title">Git</h3>
+            <p class="skill-desc">
+              Command-line version control, atomic commits, branch creation, history inspection, and safe merge flows.
+            </p>
+            <div class="skill-indicator" aria-hidden="true">
+              <span class="indicator-bar"></span>
+            </div>
+          </div>
+
+          <!-- Skill 05 -->
+          <div class="skill-tile">
+            <div class="skill-tile-header">
+              <span class="skill-code">SKL-05</span>
+              <span class="skill-stage">FOUNDATION</span>
+            </div>
+            <h3 class="skill-title">GitHub</h3>
+            <p class="skill-desc">
+              Repository hosting, markdown documentation, pull request reviews, issue management, and public code tracking.
+            </p>
+            <div class="skill-indicator" aria-hidden="true">
+              <span class="indicator-bar"></span>
+            </div>
+          </div>
+
+          <!-- Skill 06 -->
+          <div class="skill-tile">
+            <div class="skill-tile-header">
+              <span class="skill-code">SKL-06</span>
+              <span class="skill-stage">FOUNDATION</span>
+            </div>
+            <h3 class="skill-title">Problem-Solving</h3>
+            <p class="skill-desc">
+              Deconstructing ambiguity into structured logical steps, edge-case analysis, and algorithmic reasoning.
+            </p>
+            <div class="skill-indicator" aria-hidden="true">
+              <span class="indicator-bar"></span>
+            </div>
+          </div>
+
+          <!-- Skill 07 -->
+          <div class="skill-tile">
+            <div class="skill-tile-header">
+              <span class="skill-code">SKL-07</span>
+              <span class="skill-stage">COLLABORATION</span>
+            </div>
+            <h3 class="skill-title">Teamwork</h3>
+            <p class="skill-desc">
+              Collaborative ideation in peer hackathons, active listening, sharing knowledge, and building collective momentum.
+            </p>
+            <div class="skill-indicator" aria-hidden="true">
+              <span class="indicator-bar"></span>
+            </div>
+          </div>
+
+          <!-- Skill 08 -->
+          <div class="skill-tile">
+            <div class="skill-tile-header">
+              <span class="skill-code">SKL-08</span>
+              <span class="skill-stage">COLLABORATION</span>
+            </div>
+            <h3 class="skill-title">Communication</h3>
+            <p class="skill-desc">
+              Expressing technical reasoning with clarity, documenting thought processes, and providing thoughtful feedback.
+            </p>
+            <div class="skill-indicator" aria-hidden="true">
+              <span class="indicator-bar"></span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Clarity Notice -->
+        <div class="skills-disclaimer">
+          <span class="disclaimer-icon" aria-hidden="true">ℹ</span>
+          <span><strong>Note on Competencies:</strong> These represent my current learning and foundational skills as a first-year undergraduate. I believe in continuous compounding rather than overstated claims.</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- SECTION: DIRECTION                                                -->
+    <!-- ================================================================= -->
+    <section id="direction" class="section direction-section" aria-labelledby="direction-heading">
+      <div class="container">
+
+        <div class="direction-frame">
+          <div class="direction-kicker">
+            <span class="kicker-num">05</span>
+            <span class="kicker-sep">//</span>
+            <span class="kicker-text">TRAJECTORY &amp; PHILOSOPHY</span>
+          </div>
+
+          <h2 id="direction-heading" class="direction-title">THE LONG GAME.</h2>
+
+          <blockquote class="direction-quote">
+            <p>
+              "My goal is to become a skilled software engineer who builds thoughtful, useful products with software and AI."
+            </p>
+          </blockquote>
+
+          <div class="direction-body">
+            <p>
+              Becoming a dependable engineer doesn't happen through hype or superficial shortcuts. It comes from daily, disciplined practice: mastering the fundamentals of data structures and algorithms, writing readable code, understanding operating environments, and keeping a curious, humble mindset.
+            </p>
+            <p>
+              Over the coming years of my B.Tech journey, I plan to continue building small, focused projects, contributing to open-source software, and exploring how modern AI capabilities can be harnessed responsibly to make everyday human experiences simpler and more effective.
+            </p>
+          </div>
+
+          <!-- Roadmap Pillars -->
+          <div class="roadmap-grid">
+            <div class="roadmap-col">
+              <span class="roadmap-step">PHASE 01</span>
+              <h3 class="roadmap-heading">Core Foundations</h3>
+              <p class="roadmap-text">Rigorous programming fundamentals, data structures, mathematics, and web standards.</p>
+            </div>
+            <div class="roadmap-col">
+              <span class="roadmap-step">PHASE 02</span>
+              <h3 class="roadmap-heading">Applied Systems</h3>
+              <p class="roadmap-text">Building resilient web services, working with APIs, and exploring intelligent agent models.</p>
+            </div>
+            <div class="roadmap-col">
+              <span class="roadmap-step">PHASE 03</span>
+              <h3 class="roadmap-heading">Thoughtful Products</h3>
+              <p class="roadmap-text">Designing, testing, and shipping dependable software that solves tangible real-world problems.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- SECTION: CONTACT                                                  -->
+    <!-- ================================================================= -->
+    <section id="contact" class="section contact-section" aria-labelledby="contact-heading">
+      <div class="container">
+
+        <div class="contact-card">
+          <div class="contact-header">
+            <div class="section-kicker">
+              <span class="kicker-num">06</span>
+              <span class="kicker-sep">//</span>
+              <span class="kicker-text">DISCUSSIONS &amp; COLLABORATION</span>
+            </div>
+            <h2 id="contact-heading" class="contact-title">OPEN TO CONVERSATIONS &amp; IDEAS.</h2>
+            <p class="contact-sub">
+              Whether you're a fellow student exploring computer science, a mentor with advice to share, or someone interested in collaborating on hackathons and early-stage projects, I'd welcome the chance to connect.
+            </p>
+          </div>
+
+          <div class="contact-channels">
+            <!-- Primary Channel: GitHub -->
+            <div class="channel-card">
+              <div class="channel-icon-wrap" aria-hidden="true">
+                <span class="channel-icon">◈</span>
+              </div>
+              <div class="channel-info">
+                <span class="channel-type">PRIMARY HUB</span>
+                <h3 class="channel-name">GitHub Profile &amp; Repositories</h3>
+                <p class="channel-desc">Follow my ongoing commits, code exercises, and project explorations.</p>
+              </div>
+              <div class="channel-action">
+                <a href="https://github.com/garg_avi" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                  <span>Visit github.com/garg_avi</span>
+                  <span class="btn-icon" aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Collaboration Invitation Note -->
+            <div class="collaboration-note">
+              <div class="collab-header">
+                <span class="collab-marker" aria-hidden="true">●</span>
+                <span class="collab-title">PROJECT &amp; HACKATHON INQUIRIES</span>
+              </div>
+              <p class="collab-text">
+                I am actively seeking opportunities to team up with peers for hackathons, collaborative coding challenges, and open-source learning. Feel free to open an issue or reach out through my GitHub profile to start a discussion.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================================================================= -->
+  <!-- SITE FOOTER                                                       -->
+  <!-- ================================================================= -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      
+      <div class="footer-primary">
+        <div class="footer-brand">
+          <span class="footer-title">AVI.EXE</span>
+          <span class="footer-tagline">— A WORLD IN PROGRESS.</span>
+        </div>
+        <p class="footer-motto">
+          STILL LEARNING. ALWAYS BUILDING.
+        </p>
+      </div>
+
+      <div class="footer-meta">
+        <div class="meta-row">
+          <span class="meta-label">ENGINEER</span>
+          <span class="meta-val">Avi Garg</span>
+        </div>
+        <div class="meta-row">
+          <span class="meta-label">PROGRAM</span>
+          <span class="meta-val">B.Tech · CSE &amp; AI (Year 1)</span>
+        </div>
+        <div class="meta-row">
+          <span class="meta-label">CODEBASE</span>
+          <a href="https://github.com/garg_avi" target="_blank" rel="noopener noreferrer" class="footer-link">github.com/garg_avi ↗</a>
+        </div>
+        <div class="meta-row">
+          <span class="meta-label">STACK</span>
+          <span class="meta-val">Semantic HTML5 + Pure CSS3 · Zero JS</span>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          Designed with restraint, precision, and technical curiosity.
+        </p>
+        <a href="#hero" class="back-to-top" aria-label="Back to top of page">
+          <span>BACK TO TOP</span>
+          <span class="arrow-up" aria-hidden="true">↑</span>
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>
