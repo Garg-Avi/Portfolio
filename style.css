@@ -930,400 +930,7 @@ body {
 }
 
 /* --------------------------------------------------------------------------
-   11. PROJECTS & HACKATHON CONCEPTS SECTION
-   -------------------------------------------------------------------------- */
-.projects-stack {
-  display: flex;
-  flex-direction: column;
-  gap: 3.5rem;
-}
-
-.project-card {
-  background-color: var(--bg-surface);
-  border: 1px solid var(--border-medium);
-  border-radius: 4px;
-  overflow: hidden;
-  transition: border-color var(--transition-normal), box-shadow var(--transition-normal);
-}
-
-.project-card:hover {
-  border-color: var(--border-accent);
-  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.45);
-}
-
-.project-header {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  padding: 1.25rem 2rem;
-  background-color: rgba(6, 7, 10, 0.6);
-  border-bottom: 1px solid var(--border-subtle);
-}
-
-.project-taxonomy {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.65rem;
-  font-family: var(--font-mono);
-}
-
-.project-index {
-  font-size: 0.8125rem;
-  font-weight: 700;
-  color: var(--cyan-electric);
-}
-
-.taxonomy-divider {
-  color: var(--text-dim);
-}
-
-.project-category {
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  color: var(--text-secondary);
-  text-transform: uppercase;
-}
-
-.project-state-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-  font-family: var(--font-mono);
-  font-size: 0.6875rem;
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  color: var(--cyan-ice);
-  background-color: var(--bg-surface-elevated);
-  border: 1px solid var(--border-subtle);
-  padding: 0.25rem 0.65rem;
-  border-radius: 2px;
-}
-
-.badge-indicator {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background-color: var(--cyan-electric);
-}
-
-.project-body {
-  display: grid;
-  grid-template-columns: 1.15fr 1fr;
-  gap: 2.5rem;
-  padding: 2.5rem 2rem;
-  align-items: center;
-}
-
-.project-content {
-  display: flex;
-  flex-direction: column;
-}
-
-.project-name {
-  font-family: var(--font-display);
-  font-size: clamp(1.85rem, 3vw, 2.5rem);
-  font-weight: 700;
-  letter-spacing: -0.03em;
-  color: var(--text-primary);
-  margin-bottom: 0.35rem;
-}
-
-.project-tagline {
-  font-family: var(--font-mono);
-  font-size: 0.875rem;
-  color: var(--cyan-soft);
-  margin-bottom: 1.25rem;
-}
-
-.project-description {
-  font-size: 1.05rem;
-  line-height: 1.7;
-  color: var(--text-secondary);
-  margin-bottom: 1.5rem;
-}
-
-.project-notes {
-  display: flex;
-  flex-direction: column;
-  gap: 0.85rem;
-  padding: 1.15rem 1.25rem;
-  background-color: rgba(6, 7, 10, 0.45);
-  border: 1px solid var(--border-subtle);
-  border-left: 2px solid var(--border-medium);
-  border-radius: 2px;
-  margin-bottom: 1.75rem;
-}
-
-.note-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.65rem;
-}
-
-.note-bullet {
-  color: var(--cyan-electric);
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  line-height: 1.6;
-}
-
-.note-item p {
-  font-size: 0.875rem;
-  color: var(--text-secondary);
-  line-height: 1.55;
-}
-
-.note-item strong {
-  color: var(--text-primary);
-}
-
-.project-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.tag {
-  display: inline-block;
-  padding: 0.3rem 0.75rem;
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  color: var(--text-secondary);
-  background-color: var(--bg-surface-elevated);
-  border: 1px solid var(--border-subtle);
-  border-radius: 2px;
-}
-
-/* --------------------------------------------------------------------------
-   12. CSS-DESIGNED PROJECT SCHEMATICS & DATA FLOWS
-   -------------------------------------------------------------------------- */
-.diagram-shell {
-  background-color: var(--bg-canvas);
-  border: 1px solid var(--border-subtle);
-  border-radius: 4px;
-  overflow: hidden;
-  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.6);
-}
-
-.diagram-topbar {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.75rem 1rem;
-  background-color: rgba(255, 255, 255, 0.02);
-  border-bottom: 1px solid var(--border-subtle);
-  font-family: var(--font-mono);
-}
-
-.diagram-dot {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background-color: var(--cyan-electric);
-}
-
-.diagram-title {
-  font-size: 0.6875rem;
-  font-weight: 600;
-  color: var(--text-secondary);
-  letter-spacing: 0.06em;
-}
-
-.diagram-status {
-  margin-left: auto;
-  font-size: 0.625rem;
-  color: var(--cyan-soft);
-}
-
-.diagram-footer {
-  display: flex;
-  justify-content: space-between;
-  padding: 0.65rem 1rem;
-  background-color: rgba(255, 255, 255, 0.02);
-  border-top: 1px solid var(--border-subtle);
-  font-family: var(--font-mono);
-  font-size: 0.625rem;
-  color: var(--text-dim);
-  letter-spacing: 0.05em;
-}
-
-/* Schematic 01: FoodLoop Flow */
-.flow-canvas {
-  padding: 2rem 1.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.flow-step {
-  background-color: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
-  border-radius: 3px;
-  padding: 1rem 1.25rem;
-  position: relative;
-  transition: border-color var(--transition-fast);
-}
-
-.flow-step:hover {
-  border-color: var(--border-medium);
-}
-
-.step-badge {
-  font-family: var(--font-mono);
-  font-size: 0.625rem;
-  font-weight: 700;
-  color: var(--text-dim);
-  letter-spacing: 0.08em;
-  margin-bottom: 0.35rem;
-}
-
-.step-box {
-  display: flex;
-  flex-direction: column;
-  gap: 0.15rem;
-}
-
-.step-title {
-  font-family: var(--font-display);
-  font-size: 1rem;
-  font-weight: 700;
-  color: var(--text-primary);
-}
-
-.step-sub {
-  font-size: 0.8125rem;
-  color: var(--text-muted);
-}
-
-/* Center Highlight Node */
-.step-highlight {
-  background-color: rgba(0, 240, 255, 0.04);
-  border-color: var(--border-accent);
-}
-
-.badge-accent {
-  color: var(--cyan-electric);
-}
-
-.box-accent .step-title {
-  color: var(--cyan-electric);
-}
-
-/* Flow Connectors */
-.flow-connector {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  height: 20px;
-}
-
-.connector-line {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 1px;
-  background-color: var(--cyan-soft);
-  opacity: 0.4;
-}
-
-.connector-label {
-  position: relative;
-  z-index: 1;
-  background-color: var(--bg-canvas);
-  padding: 0 0.5rem;
-  font-family: var(--font-mono);
-  font-size: 0.5625rem;
-  font-weight: 700;
-  color: var(--cyan-soft);
-  letter-spacing: 0.1em;
-}
-
-/* Schematic 02: HACKOWEEN Pipeline */
-.pipeline-canvas {
-  padding: 2rem 1.25rem;
-}
-
-.pipeline-track {
-  display: flex;
-  flex-direction: column;
-  gap: 0.85rem;
-}
-
-.track-node {
-  display: grid;
-  grid-template-columns: 28px 1fr auto;
-  align-items: center;
-  gap: 1rem;
-  padding: 0.85rem 1rem;
-  background-color: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
-  border-radius: 3px;
-}
-
-.node-active {
-  background-color: rgba(0, 240, 255, 0.04);
-  border-color: var(--border-accent);
-}
-
-.node-id {
-  font-family: var(--font-mono);
-  font-size: 0.8125rem;
-  font-weight: 700;
-  color: var(--cyan-electric);
-}
-
-.node-content {
-  display: flex;
-  flex-direction: column;
-  gap: 0.15rem;
-}
-
-.node-heading {
-  font-family: var(--font-display);
-  font-size: 0.9375rem;
-  font-weight: 600;
-  color: var(--text-primary);
-}
-
-.node-desc {
-  font-size: 0.75rem;
-  color: var(--text-muted);
-}
-
-.node-badge {
-  font-family: var(--font-mono);
-  font-size: 0.625rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  padding: 0.2rem 0.5rem;
-  background-color: var(--bg-canvas);
-  border: 1px solid var(--border-subtle);
-  color: var(--text-dim);
-  border-radius: 2px;
-}
-
-.track-separator {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 12px;
-}
-
-.sep-arrow {
-  width: 0;
-  height: 0;
-  border-left: 4px solid transparent;
-  border-right: 4px solid transparent;
-  border-top: 6px solid var(--cyan-soft);
-  opacity: 0.6;
-}
-
-/* --------------------------------------------------------------------------
-   13. SKILLS SECTION
+   11. SKILLS SECTION
    -------------------------------------------------------------------------- */
 .skills-grid {
   display: grid;
@@ -1429,7 +1036,7 @@ body {
 }
 
 /* --------------------------------------------------------------------------
-   14. DIRECTION SECTION
+   12. DIRECTION SECTION
    -------------------------------------------------------------------------- */
 .direction-frame {
   background-color: var(--bg-surface);
@@ -1538,7 +1145,7 @@ body {
 }
 
 /* --------------------------------------------------------------------------
-   15. CONTACT SECTION
+   13. CONTACT SECTION
    -------------------------------------------------------------------------- */
 .contact-card {
   background-color: var(--bg-surface);
@@ -1663,7 +1270,7 @@ body {
 }
 
 /* --------------------------------------------------------------------------
-   16. SITE FOOTER
+   14. SITE FOOTER
    -------------------------------------------------------------------------- */
 .site-footer {
   background-color: var(--bg-base);
@@ -1787,7 +1394,7 @@ body {
 }
 
 /* --------------------------------------------------------------------------
-   17. KEYFRAME ANIMATIONS & MOTION PREFERENCES
+   15. KEYFRAME ANIMATIONS & MOTION PREFERENCES
    -------------------------------------------------------------------------- */
 @keyframes orbit-spin {
   from {
@@ -1831,7 +1438,7 @@ body {
 }
 
 /* --------------------------------------------------------------------------
-   18. RESPONSIVE MEDIA QUERIES
+   16. RESPONSIVE MEDIA QUERIES
    -------------------------------------------------------------------------- */
 
 /* Tablet & Below (<= 992px) */
@@ -1849,10 +1456,6 @@ body {
   }
 
   .about-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .project-body {
     grid-template-columns: 1fr;
   }
 
@@ -1935,27 +1538,6 @@ body {
 
   .focus-item {
     grid-template-columns: 1fr;
-  }
-
-  .project-header {
-    padding: 1rem 1.25rem;
-  }
-
-  .project-body {
-    padding: 1.5rem 1.25rem;
-  }
-
-  .flow-canvas, .pipeline-canvas {
-    padding: 1.25rem 0.75rem;
-  }
-
-  .track-node {
-    grid-template-columns: 24px 1fr;
-  }
-
-  .track-node .node-badge {
-    grid-column: 2 / -1;
-    justify-self: start;
   }
 
   .footer-bottom {
